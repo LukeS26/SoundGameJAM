@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     public static PlayerController Instance;
@@ -13,15 +14,13 @@ public class PlayerController : MonoBehaviour {
 
     void Start() {
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
-
-
     }
 
-    void OnLevelWasLoaded() {
+    void OnLoad(Scene scene, LoadSceneMode mode) {
         Debug.Log(door);
         if(door != null) {
             Debug.Log(GameObject.Find(door).transform.position);
-            transform.position = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 2f);
+            transform.position = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 1.5f);
         }
     }
 
@@ -34,6 +33,8 @@ public class PlayerController : MonoBehaviour {
 
     void OnEnable() {
         inputManager.Player.Enable();
+
+        SceneManager.sceneLoaded += OnLoad;
     }
 
     void OnDisable() {
