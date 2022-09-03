@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 2102405708}
-  delay: 1
+  delay: 3
   dist: 0
   currentDelay: 0
   inRing: 0

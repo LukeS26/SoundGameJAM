@@ -42,7 +42,7 @@ public class AudioObject : MonoBehaviour
     //play SFX form the array at the position of the sound 
     public void playSFX(float volume)//Feature Point :Trigger Sound, Arrays 
     {
-        float mult = 1/((10 / volume));
+        float mult = ((2 / volume));
 
         Debug.Log(mult);
         if (inRing)
