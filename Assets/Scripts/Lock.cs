@@ -4,14 +4,28 @@ using UnityEngine;
 
 public class Lock : MonoBehaviour
 {
-    public GameObject wall, player;
+    public GameObject wall;
     public bool trig;
     public Sprite[] imgs;
     bool inPlace;
+    InputManager inputManager;
+
+    void Awake() {
+        inputManager = new InputManager();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         trig = false;
+    }
+
+    void OnEnable() {
+        inputManager.Player.Enable();
+    }
+
+    void OnDisable() {
+        inputManager.Player.Disable();
     }
 
     // Update is called once per frame
@@ -19,22 +33,26 @@ public class Lock : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sprite = (trig) ? imgs[1] : imgs[0];
 
-        if (inPlace && Input.GetKeyDown(KeyCode.E)) trig = true;
+        if (inPlace && inputManager.Player.Interact.triggered) {
+            trig = true;
+            
+        }
 
         if (wall != null && trig)
         {
             GetComponent<SoundEmitter>().PlayPart(wall.transform.position);
             Destroy(wall);
+            GetComponent<SoundEmitter>().enabled = false;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == player) inPlace = true;
+        if (collision.gameObject.tag == "Player") inPlace = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == player) inPlace = false;
+        if (collision.gameObject.tag == "Player") inPlace = false;
     }
 }

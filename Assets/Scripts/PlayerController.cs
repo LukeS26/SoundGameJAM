@@ -10,17 +10,23 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed = 0.5f;
     public InputManager inputManager;
 
+    public float horizontal, vertical;
+
     private Rigidbody2D rigidbody;
+
+    private Vector2 startPos;
+
+    public int health;
 
     void Start() {
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
     void OnLoad(Scene scene, LoadSceneMode mode) {
-        Debug.Log(door);
         if(door != null) {
             Debug.Log(GameObject.Find(door).transform.position);
-            transform.position = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 2f);
+            startPos = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 2f);
+            transform.position = startPos;
         }
     }
 
@@ -47,9 +53,18 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        float horizontal = inputManager.Player.Movement.ReadValue<Vector2>().x;
-        float vertical = inputManager.Player.Movement.ReadValue<Vector2>().y;
+        horizontal = inputManager.Player.Movement.ReadValue<Vector2>().x;
+        vertical = inputManager.Player.Movement.ReadValue<Vector2>().y;
 
         rigidbody.AddForce(new Vector2(horizontal * moveSpeed, vertical * moveSpeed));        
+    }
+
+    public void Damage() {
+        health -= 1;
+        if(health < 1) {
+            Destroy(gameObject);
+        } else {
+            transform.position = startPos;
+        }
     }
 }

@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class LoadGame : MonoBehaviour {
 
     public InputManager inputManager;
+    public AudioSource[] sounds;
 
     void Awake() {
         inputManager = new InputManager();
+
+        for(int i = 0; i < sounds.Length; i++) {
+            sounds[i].Play();
+        }
     }
 
     void OnEnable() {
@@ -18,7 +23,11 @@ public class LoadGame : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if(inputManager.Menu.Start.triggered) {
-            SceneManager.LoadScene("brent_test");
+            for(int i = 0; i < sounds.Length; i++) {
+                sounds[i].Stop();
+            }            
+            
+            SceneManager.LoadScene("FirstRoom");
             inputManager.Menu.Disable();
         }
     }

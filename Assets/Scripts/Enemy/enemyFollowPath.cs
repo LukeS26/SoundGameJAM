@@ -47,11 +47,16 @@ public class enemyFollowPath : MonoBehaviour
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 waypointIndex += 1;
+                waypointIndex %= waypoints.Length;
             }
         }
         else
         {
             waypointIndex = 0;
         }
+    }
+
+    public Transform GetWaypoint() {
+        return waypoints[waypointIndex];
     }
 }

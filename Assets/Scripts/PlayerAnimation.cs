@@ -11,7 +11,6 @@ public class PlayerAnimation : MonoBehaviour
     Rigidbody2D rb;
     float t;
     public float speed, moveSpeed;
-    public int hp;
     
     // Start is called before the first frame update
     void Start()
@@ -24,10 +23,17 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xmove = Input.GetAxisRaw("Horizontal");
-        float ymove = Input.GetAxisRaw("Vertical");
-        if (xmove != 0) dir = new Vector2Int((int)xmove,0);
-        else if (ymove != 0) dir = new Vector2Int(0,(int)ymove);
+        float xmove = gameObject.GetComponent<PlayerController>().horizontal;
+        float ymove = gameObject.GetComponent<PlayerController>().vertical;
+
+
+        if (xmove != 0 && Mathf.Abs(xmove) >= Mathf.Abs(ymove))
+        { 
+            dir = new Vector2Int((int) Mathf.Sign(xmove),0);
+        } else if (ymove != 0 && Mathf.Abs(xmove) < Mathf.Abs(ymove)) 
+        {
+            dir = new Vector2Int(0,(int) Mathf.Sign(ymove));
+        }
         
         t += Time.deltaTime * speed;
 

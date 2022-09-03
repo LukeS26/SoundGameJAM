@@ -23,6 +23,10 @@ public class AudioObject : MonoBehaviour
             playSFX(dist);
             currentDelay = delay;
         }
+
+        if(!inRing) {
+            sfx.Stop();
+        }
     }
 
     public void insideRing()

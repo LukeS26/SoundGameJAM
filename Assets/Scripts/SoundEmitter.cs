@@ -12,19 +12,21 @@ public class SoundEmitter : MonoBehaviour
     Material rmat;
     float t, sight;
     public float interval, radius;
-    public GameObject player;
+    GameObject player;
     public float playerRadius, initVis, burstSpeed, decSpeed;
+    public bool enabled = true;
 
     Material thisMat;
     public bool hidden;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
+
         rmat = new Material(prefmat);
         rmat.color = col;
 
-        if (hidden)
-        {
+        if (hidden) {
             thisMat = new Material(GetComponent<SpriteRenderer>().material);
             GetComponent<SpriteRenderer>().material = thisMat;
         }
@@ -36,7 +38,9 @@ public class SoundEmitter : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, transform.position) < playerRadius && t > interval)
         {
-            PlayPart(transform.position);
+            if(enabled) {
+                PlayPart(transform.position);
+            }
             t = 0f;
         }
         else if (Vector3.Distance(player.transform.position, transform.position) > playerRadius) t = interval;
