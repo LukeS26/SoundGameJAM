@@ -24,7 +24,6 @@ public class LevelManager : MonoBehaviour {
 
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(levelName);
-            SceneManager.UnloadSceneAsync(currentScene);
         }
     }
 }
