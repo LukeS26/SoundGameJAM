@@ -14,8 +14,13 @@ public class PlayerController : MonoBehaviour {
     void Start() {
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
 
-        //Debug.Log(door);
+
+    }
+
+    void OnLevelWasLoaded() {
+        Debug.Log(door);
         if(door != null) {
+            Debug.Log(GameObject.Find(door).transform.position);
             transform.position = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 2f);
         }
     }
@@ -24,7 +29,7 @@ public class PlayerController : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
         inputManager = new InputManager();
-        Instance = this;
+        Instance = this;      
     }
 
     void OnEnable() {
