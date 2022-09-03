@@ -41,11 +41,27 @@ public class AudioRing : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+/*    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "obj")
         {
             other.GetComponent<AudioObject>().insideRing();
+
+            float dist = Vector2.Distance(gameObject.transform.position, other.transform.position);
+
+            other.GetComponent<AudioObject>().setDistance(dist);
+        }
+    }*/
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.tag == "obj")
+        {
+            other.GetComponent<AudioObject>().insideRing();
+
+            float dist = Vector2.Distance(gameObject.transform.position, other.gameObject.transform.position);
+
+            other.GetComponent<AudioObject>().setDistance(dist);
         }
     }
 

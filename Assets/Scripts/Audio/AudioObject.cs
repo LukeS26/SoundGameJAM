@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioObject : MonoBehaviour
 {
     public AudioSource sfx;
-    public float delay;
+    public float delay,dist;
     public float currentDelay;
     public bool inRing,timeUp;
 
@@ -20,7 +20,7 @@ public class AudioObject : MonoBehaviour
         currentDelay -= Time.deltaTime;
         if (currentDelay < 0)
         {
-            playSFX();
+            playSFX(dist);
             currentDelay = delay;
         }
     }
@@ -34,12 +34,20 @@ public class AudioObject : MonoBehaviour
         inRing = false;
     }
 
-    //play SFX form the array at the position of the sound 
-    public void playSFX()//Feature Point :Trigger Sound, Arrays 
+    public void setDistance(float theDistance)
     {
+        dist = theDistance;
+    }
+
+    //play SFX form the array at the position of the sound 
+    public void playSFX(float volume)//Feature Point :Trigger Sound, Arrays 
+    {
+        float mult = 1/((10 / volume));
+
+        Debug.Log(mult);
         if (inRing)
         {
-            sfx.PlayOneShot(sfx.clip, 1.0f);//Feature Point :Trigger Sound, Arrays
+            sfx.PlayOneShot(sfx.clip, mult);//Feature Point :Trigger Sound, Arrays
         }
     }
 }
