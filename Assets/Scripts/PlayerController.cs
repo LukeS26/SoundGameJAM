@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
-    public static PlayerController Instance;
+    public static PlayerController instance;
     public static string door;
 
     public float moveSpeed = 0.5f;
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
         Debug.Log(door);
         if(door != null) {
             Debug.Log(GameObject.Find(door).transform.position);
-            transform.position = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 1.5f);
+            transform.position = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 2f);
         }
     }
 
@@ -28,7 +28,12 @@ public class PlayerController : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
         inputManager = new InputManager();
-        Instance = this;      
+
+        if (instance == null) {
+            instance = this;
+        } else {
+            DestroyObject(gameObject);
+        }
     }
 
     void OnEnable() {

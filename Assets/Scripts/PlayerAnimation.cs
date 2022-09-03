@@ -40,7 +40,7 @@ public class PlayerAnimation : MonoBehaviour
 
         rend.sprite = images[img];
 
-        rb.velocity = new Vector3(xmove, ymove, 0).normalized * moveSpeed;
+        //rb.velocity = new Vector3(xmove, ymove, 0).normalized * moveSpeed;
     }
 
     int TPattern(float t)
