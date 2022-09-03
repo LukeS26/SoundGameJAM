@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+    public static PlayerController Instance;
+    public static string door;
 
     public float moveSpeed = 0.5f;
     public InputManager inputManager;
@@ -11,10 +13,18 @@ public class PlayerController : MonoBehaviour {
 
     void Start() {
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
+
+        //Debug.Log(door);
+        if(door != null) {
+            transform.position = GameObject.Find(door).transform.position + (GameObject.Find(door).transform.up * 2f);
+        }
     }
 
     void Awake() {
+        DontDestroyOnLoad(gameObject);
+
         inputManager = new InputManager();
+        Instance = this;
     }
 
     void OnEnable() {
@@ -23,11 +33,6 @@ public class PlayerController : MonoBehaviour {
 
     void OnDisable() {
         inputManager.Player.Disable();
-    }
-
-    // Update is called once per frame
-    void Update() {
-        
     }
 
     void FixedUpdate() {
