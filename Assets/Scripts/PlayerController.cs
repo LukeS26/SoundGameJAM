@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed = 0.5f;
     public InputManager inputManager;
 
+    public AudioSource footSteps; 
+
     public float horizontal, vertical;
 
     private Rigidbody2D rigidbody;
@@ -56,7 +58,27 @@ public class PlayerController : MonoBehaviour {
         horizontal = inputManager.Player.Movement.ReadValue<Vector2>().x;
         vertical = inputManager.Player.Movement.ReadValue<Vector2>().y;
 
-        rigidbody.AddForce(new Vector2(horizontal * moveSpeed, vertical * moveSpeed));        
+        if (horizontal!=0 || vertical != 0)
+        {
+            playFootSound();
+        }
+        else
+        {
+            pauseFootSound();
+        }
+
+        rigidbody.AddForce(new Vector2(horizontal * moveSpeed, vertical * moveSpeed));  
+        
+    }
+
+    private void playFootSound()
+    {
+        footSteps.enabled = true;
+    }
+    
+    private void pauseFootSound()
+    {
+        footSteps.enabled = false;
     }
 
     public void Damage() {
