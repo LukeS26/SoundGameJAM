@@ -3762,7 +3762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.size
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -3771,15 +3771,15 @@ PrefabInstance:
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[1]
       value: 
-      objectReference: {fileID: 301387926}
+      objectReference: {fileID: 1435109671}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 614619253}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 301387926}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[4]
       value: 
@@ -4018,6 +4018,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 255839451}
+    - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1404881845}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
 --- !u!1 &928068893
