@@ -374,9 +374,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pTransform: {fileID: 0}
   range: 1
-  rangeMax: 1.2
+  rangeMax: 1
   rangeStart: 1
-  rangeSpeed: 0.35
+  rangeSpeed: 1
   startLineWidth: 0
   lineWidth: 0
   lineWidthSpeed: 2
