@@ -70,7 +70,7 @@ public class SoundEmitter : MonoBehaviour
         rsys.GetComponent<ParticleSystem>().Play();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (hidden && collision.gameObject.tag == "Player")
         {
@@ -79,7 +79,7 @@ public class SoundEmitter : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision) {
+    private void OnCollisionExit2D(Collision2D collision) {
         if (hidden && collision.gameObject.tag == "Player")
         {
             allowDec = true;
