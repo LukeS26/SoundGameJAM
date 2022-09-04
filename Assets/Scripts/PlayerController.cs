@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour {
         Instantiate(getLife, lifeSoundOrigin, Quaternion.identity);
         if (health < 3) {
             health ++;
+            GameObject.Find("Health").GetComponent<DrawLives>().GainLife();
         }
     }
 }
