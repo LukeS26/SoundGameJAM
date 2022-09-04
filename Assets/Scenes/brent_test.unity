@@ -277,9 +277,10 @@ MonoBehaviour:
   - {fileID: 9059083401724566512, guid: 59e541516125dc04eaf204f81a572f1b, type: 3}
   - {fileID: 5116829961996181073, guid: fcfa99aee95947147a34fa6b52d9d4b1, type: 3}
   - {fileID: 3463882950301956864, guid: 25b5eb7c46aee864488144e92cc5c366, type: 3}
-  sfxLow: 0
-  sfxHigh: 0
+  sfxLow: 1
+  sfxHigh: 5
   sfxDelay: 0
+  playSound: 0
 --- !u!4 &952846261
 Transform:
   m_ObjectHideFlags: 0
@@ -487,7 +488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8588655138892301923, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
