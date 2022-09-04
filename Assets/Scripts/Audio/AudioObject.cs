@@ -55,4 +55,9 @@ public class AudioObject : MonoBehaviour
             sfx.PlayOneShot(sfx.clip, 1);//Feature Point :Trigger Sound, Arrays
         }
     }
+
+    public void DisableSounds() {
+        sfx.Stop();
+        sfx.gameObject.SetActive(false);
+    }
 }

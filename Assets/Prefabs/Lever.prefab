@@ -42,9 +42,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 424b3e7ce77189f4eb26fa00e6cf5f06, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb502a8c0d0ca974bb0421db2cc1a1c1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.553
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -360,6 +360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 0}
+  wmat1: {fileID: 2100000, guid: 254c5813730091c43b537cdbb7474e35, type: 2}
+  wmat2: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  wt: 1
   trig: 0
   imgs:
   - {fileID: 785531595, guid: 85bd9b1d68ff57644b47be0006fe3e77, type: 3}

@@ -8,18 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondRoom.unity
     guid: e2a15272a99a78442951d3ba0caf68da
-  - enabled: 0
-    path: Assets/Scenes/Test2.unity
-    guid: 9cb574758a957f645bdcd9f02e5a0a23
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 417283fdc3b8ed84f9f59411544c6ffd
   - enabled: 0
     path: Assets/Scenes/brent_test.unity
     guid: ae850a5028515e042b541b498ca10d64
-  - enabled: 0
-    path: Assets/Scenes/brent_test_2.unity
-    guid: 31dcd5eea759c014a9bf80decb31bf94
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: efa41911092349a4aa40844809701d62
   - enabled: 1
     path: Assets/Scenes/Room1.unity
     guid: 61c9eee314256634fb5e34d831e21b2d
