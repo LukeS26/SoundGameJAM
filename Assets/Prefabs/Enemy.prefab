@@ -205,7 +205,11 @@ GameObject:
   - component: {fileID: 3294338200992961231}
   - component: {fileID: 3294338200992961239}
   - component: {fileID: 3294338200992961238}
+<<<<<<< HEAD
   - component: {fileID: 185893489}
+=======
+  - component: {fileID: -8409603301086285283}
+>>>>>>> 87fe83facbea428c5c481ab4cc038b35e021fea2
   m_Layer: 0
   m_Name: Enemy
   m_TagString: obj
@@ -381,7 +385,11 @@ MonoBehaviour:
   currentDelay: 0
   inRing: 0
   timeUp: 0
+<<<<<<< HEAD
 --- !u!58 &185893489
+=======
+--- !u!58 &-8409603301086285283
+>>>>>>> 87fe83facbea428c5c481ab4cc038b35e021fea2
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,4 +404,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
+<<<<<<< HEAD
   m_Radius: 2.74
+=======
+  m_Radius: 2
+>>>>>>> 87fe83facbea428c5c481ab4cc038b35e021fea2

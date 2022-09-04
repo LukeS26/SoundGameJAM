@@ -8,28 +8,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondRoom.unity
     guid: e2a15272a99a78442951d3ba0caf68da
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test2.unity
     guid: 9cb574758a957f645bdcd9f02e5a0a23
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 417283fdc3b8ed84f9f59411544c6ffd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/brent_test.unity
     guid: ae850a5028515e042b541b498ca10d64
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/brent_test_2.unity
     guid: 31dcd5eea759c014a9bf80decb31bf94
   - enabled: 1
-    path: Assets/Scenes/Room4.unity
-    guid: dd909c8257c221e4c9d0ef9e538db842
-  - enabled: 1
-    path: Assets/Scenes/Room3.unity
-    guid: e1b309f99c29c2045bfc5b84c1a6a3f8
+    path: Assets/Scenes/Room1.unity
+    guid: 61c9eee314256634fb5e34d831e21b2d
   - enabled: 1
     path: Assets/Scenes/Room2.unity
     guid: a9787f26ec53004458d03dde74311e4d
   - enabled: 1
-    path: Assets/Scenes/Room1.unity
-    guid: 61c9eee314256634fb5e34d831e21b2d
+    path: Assets/Scenes/Room3.unity
+    guid: e1b309f99c29c2045bfc5b84c1a6a3f8
+  - enabled: 1
+    path: Assets/Scenes/Room4.unity
+    guid: dd909c8257c221e4c9d0ef9e538db842
+  - enabled: 1
+    path: Assets/Scenes/Room5.unity
+    guid: 0a151bdeddbebe74aa3ee1843faaf4c5
   m_configObjects: {}
