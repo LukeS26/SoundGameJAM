@@ -85,6 +85,8 @@ public class PlayerController : MonoBehaviour {
         health -= 1;
         if(health < 1) {
             Destroy(gameObject);
+            Destroy(GameObject.Find("Health"));
+            SceneManager.LoadScene("Death");
         } else {
             transform.position = startPos;
         }
