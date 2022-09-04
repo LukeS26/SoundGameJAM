@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 417283fdc3b8ed84f9f59411544c6ffd
-  - enabled: 0
-    path: Assets/Scenes/brent_test.unity
-    guid: ae850a5028515e042b541b498ca10d64
   - enabled: 1
     path: Assets/Scenes/Death.unity
     guid: efa41911092349a4aa40844809701d62
@@ -62,4 +59,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room16.unity
     guid: 9244fa16424607e409decaba5c863050
+  - enabled: 1
+    path: Assets/Scenes/RoomFinal.unity
+    guid: 354c19a565f10d5438785239ea47bb87
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: a50117bd724f14747bcb88ca0c57f888
   m_configObjects: {}

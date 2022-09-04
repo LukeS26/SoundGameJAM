@@ -9508,7 +9508,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1883129700
 MonoBehaviour:
@@ -9527,7 +9527,7 @@ MonoBehaviour:
   - {fileID: -1354291919, guid: 0f5d1683da0001e4d8488d8bef6935a8, type: 3}
   - {fileID: -944347083, guid: 0f5d1683da0001e4d8488d8bef6935a8, type: 3}
   maxHp: 3
-  dmgLerp: 0.025
+  dmgLerp: 0.075
   imageInterval: 1
   mat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   shatter: {fileID: 5883454857584279195, guid: a7168ecef36045c439e3d17d460dca44, type: 3}
@@ -9545,7 +9545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7756906846233532574, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7756906846233532574, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
       propertyPath: m_LocalPosition.x
