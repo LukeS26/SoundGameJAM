@@ -197,14 +197,14 @@ MonoBehaviour:
   prefmat: {fileID: 2100000, guid: 45e79af0f0a2ea641ba3887106233b01, type: 2}
   t: 0
   sight: 0
-  interval: 2
+  interval: 1
   radius: 6
   playerRadius: 6
   initVis: 0.65
   burstSpeed: 60
   decSpeed: 0
   enabled: 1
-  playNormal: 0
+  playNormal: 1
   hidden: 0
 --- !u!114 &2777340553328763162
 MonoBehaviour:

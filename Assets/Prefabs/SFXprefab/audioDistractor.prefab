@@ -47,8 +47,7 @@ MonoBehaviour:
   SFX:
   - {fileID: 6938636680032726844, guid: f53c21a1ec78079469d04cf9fae3dba0, type: 3}
   - {fileID: 5184258236605588949, guid: 2605e6b2c50072745a48516db19435c5, type: 3}
-  - {fileID: 894464613353469168, guid: c389348eb9a7aa24fa69a26140cb23ff, type: 3}
-  sfxLow: 5
-  sfxHigh: 20
+  sfxLow: 3
+  sfxHigh: 4
   sfxDelay: 0
   playSound: 0

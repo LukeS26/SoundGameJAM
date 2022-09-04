@@ -31,6 +31,15 @@ public class AudioSFXHolder : MonoBehaviour
                 AudioDistraction.Instance.playSound = true;
                 Destroy(gameObject);
             }
+
+            float distanceAway = Vector3.Distance(PlayerController.instance.gameObject.transform.position, transform.position);
+
+            if (distanceAway > 20f)
+            {
+                Debug.Log("TOO FAR");
+                AudioDistraction.Instance.playSound = true;
+                Destroy(gameObject);
+            }
         }
         else
         {
