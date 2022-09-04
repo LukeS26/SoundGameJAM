@@ -22,14 +22,14 @@ public class AudioObject : MonoBehaviour
         currentDelay -= Time.deltaTime;
         if (currentDelay < 0 && !sfx.isPlaying)
         {
-            playSFX(dist);
+            playSFX();
             currentDelay = delay;
         }
 
         if(!inRing) {
             sfx.Stop();
         } else {
-            sfx.volume = 1 / (Vector2.Distance(transform.position, player.transform.position) * Vector2.Distance(transform.position, player.transform.position));
+            sfx.volume = 5 / (Vector2.Distance(transform.position, player.transform.position) * Vector2.Distance(transform.position, player.transform.position));
         }
     }
 
@@ -48,7 +48,7 @@ public class AudioObject : MonoBehaviour
     }
 
     //play SFX form the array at the position of the sound 
-    public void playSFX(float volume)//Feature Point :Trigger Sound, Arrays 
+    public void playSFX()//Feature Point :Trigger Sound, Arrays 
     {
         if (inRing)
         {
