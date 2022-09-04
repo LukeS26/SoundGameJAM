@@ -192,18 +192,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  col: {r: 0.7924528, g: 0.7748427, b: 0, a: 0}
+  col: {r: 0.7921569, g: 0.7764706, b: 0, a: 0}
   prefsys: {fileID: 6112252678650021465, guid: 5649f2726dfad4e4e901a8338a44c8e0, type: 3}
   prefmat: {fileID: 2100000, guid: 45e79af0f0a2ea641ba3887106233b01, type: 2}
   t: 0
   sight: 0
   interval: 2
   radius: 6
-  playerRadius: 5
-  initVis: 0.19
-  burstSpeed: 28.9
+  playerRadius: 6
+  initVis: 0.65
+  burstSpeed: 60
   decSpeed: 0
   enabled: 1
+  playNormal: 0
   hidden: 0
 --- !u!114 &5109399046569168033
 MonoBehaviour:

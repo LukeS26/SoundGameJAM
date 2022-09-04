@@ -14,7 +14,10 @@ public class AudioSFXHolder : MonoBehaviour
         if (isDistraction)
         {
             AudioDistraction.Instance.playSound = false;
+            SoundEmitter s = GetComponent<SoundEmitter>();
+            s.PlayPart(transform.position);
         }
+ 
     }
 
     // Update is called once per frame
