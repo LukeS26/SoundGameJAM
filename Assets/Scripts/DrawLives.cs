@@ -13,6 +13,10 @@ public class DrawLives : MonoBehaviour
     float slideHp;
     public float dmgLerp, imageInterval;
     public Material mat;
+    public GameObject shatter;
+    GameObject[] shatters;
+    GameObject[] fixes;
+    public GameObject fix;
 
     void Awake() {
         DontDestroyOnLoad(gameObject);
@@ -29,6 +33,9 @@ public class DrawLives : MonoBehaviour
     {
         hp = maxHp;
         lives = new GameObject[maxHp];
+        shatters = new GameObject[maxHp];
+        fixes = new GameObject[maxHp];
+
         for (int i = 0; i < maxHp; i++)
         {
             lives[i] = new GameObject("Life " + (i+1));
@@ -38,6 +45,10 @@ public class DrawLives : MonoBehaviour
             r.sprite = images[0];
             r.sortingOrder = 1;
             r.material = mat;
+
+            shatters[i] = Instantiate(shatter, lives[i].transform.position, Quaternion.identity, lives[i].transform);
+            fixes[i] = Instantiate(fix, lives[i].transform.position, Quaternion.identity, lives[i].transform);
+
         }
     }
 
@@ -50,8 +61,17 @@ public class DrawLives : MonoBehaviour
         {
             SpriteRenderer r = lives[i].GetComponent<SpriteRenderer>();
             if (hp > i) r.sprite = images[0];
-            else if (slideHp > i+0.1f) r.sprite = images[1];
+            else if (slideHp > i+0.1f) {
+                r.sprite = images[1];
+                if(!shatters[i].GetComponent<ParticleSystem>().isPlaying) {
+                    shatters[i].GetComponent<ParticleSystem>().Play();
+                }
+            }
             else r.sprite = images[2];
         }
+    }
+
+    public void GainLife() {
+        fixes[hp].GetComponent<ParticleSystem>().Play();
     }
 }
