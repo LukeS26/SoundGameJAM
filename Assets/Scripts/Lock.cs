@@ -9,6 +9,7 @@ public class Lock : MonoBehaviour
     public Sprite[] imgs;
     bool inPlace;
     InputManager inputManager;
+    public AudioSource doorNoise;
 
     void Awake() {
         inputManager = new InputManager();
@@ -35,7 +36,7 @@ public class Lock : MonoBehaviour
 
         if (inPlace && inputManager.Player.Interact.triggered) {
             trig = true;
-            
+            doorNoise.Play();
         }
 
         if (wall != null && trig)
