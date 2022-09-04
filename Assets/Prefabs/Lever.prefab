@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eb502a8c0d0ca974bb0421db2cc1a1c1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.553
+  m_Volume: 0.354
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -419,6 +419,7 @@ MonoBehaviour:
   burstSpeed: 28.9
   decSpeed: 1
   enabled: 1
+  playNormal: 1
   hidden: 1
 --- !u!61 &7184203654674623442
 BoxCollider2D:
