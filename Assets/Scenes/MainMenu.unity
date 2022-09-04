@@ -749,7 +749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PRESS SPACE/START
+  m_text: PRESS SPACE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e8236697f1e6efd4a912c1d14c581aee, type: 2}
   m_sharedMaterial: {fileID: -2183731136536529795, guid: e8236697f1e6efd4a912c1d14c581aee, type: 2}

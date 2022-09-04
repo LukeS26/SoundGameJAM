@@ -3,36 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadGame : MonoBehaviour {
-
+public class DeathScreen : MonoBehaviour
+{
     public InputManager inputManager;
-    public AudioSource[] sounds;
 
     void Awake() {
         inputManager = new InputManager();
-
-        for(int i = 0; i < sounds.Length; i++) {
-            sounds[i].Play();
-        }
     }
 
-    void OnEnable() {
+     void OnEnable() {
         inputManager.Menu.Enable();
     }
-
 
     void OnDisable() {
         inputManager.Menu.Disable();
     }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         if(inputManager.Menu.Start.triggered) {
-            // for(int i = 0; i < sounds.Length; i++) {
-            //     sounds[i].Stop();
-            // }
-            
             SceneManager.LoadScene("Room1");
             inputManager.Menu.Disable();
         }

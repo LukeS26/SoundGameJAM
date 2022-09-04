@@ -22,7 +22,7 @@ public class LifePickup : MonoBehaviour
         transform.position = startPos + new Vector2(0, Mathf.Sin(t * rate) * mag);
     }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<PlayerController>().health < 3) {
             collision.gameObject.GetComponent<PlayerController>().addLife();

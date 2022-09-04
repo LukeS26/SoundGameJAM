@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void OnDisable() {
-        inputManager.Player.Disable();
+        inputManager.Menu.Enable();
     }
 
     void FixedUpdate() {
