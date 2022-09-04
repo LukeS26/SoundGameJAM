@@ -4193,10 +4193,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
-      propertyPath: waypoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
+    - target: {fileID: 5711203641389470389, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
+      propertyPath: heartSound
+      value: 
+      objectReference: {fileID: 7250895765238383833, guid: be2a0cb77217a7348a6e2497d9f2e09f, type: 3}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 

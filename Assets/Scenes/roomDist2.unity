@@ -5222,12 +5222,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4203040586320602102, guid: 8b3eb00cd2583a04aaa7f021f5abd370, type: 3}
       propertyPath: SFX.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4203040586320602102, guid: 8b3eb00cd2583a04aaa7f021f5abd370, type: 3}
       propertyPath: SFX.Array.data[0]
       value: 
-      objectReference: {fileID: 5184258236605588949, guid: 2605e6b2c50072745a48516db19435c5, type: 3}
+      objectReference: {fileID: 6938636680032726844, guid: f53c21a1ec78079469d04cf9fae3dba0, type: 3}
+    - target: {fileID: 4203040586320602102, guid: 8b3eb00cd2583a04aaa7f021f5abd370, type: 3}
+      propertyPath: SFX.Array.data[1]
+      value: 
+      objectReference: {fileID: 894464613353469168, guid: c389348eb9a7aa24fa69a26140cb23ff, type: 3}
     - target: {fileID: 4203040586320602103, guid: 8b3eb00cd2583a04aaa7f021f5abd370, type: 3}
       propertyPath: m_RootOrder
       value: 8

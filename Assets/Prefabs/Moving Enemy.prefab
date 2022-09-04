@@ -173,6 +173,7 @@ MonoBehaviour:
   burstSpeed: 70
   decSpeed: 0.5
   enabled: 1
+  playNormal: 1
   hidden: 1
 --- !u!114 &5711203640445174743
 MonoBehaviour:
@@ -220,7 +221,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1b515975384d84ca4331d5cf07f5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   moveSpeed: 1.5
 --- !u!1 &5711203640494179474
 GameObject:
@@ -412,4 +417,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartBeatRange: {fileID: 5711203641389470388}
-  heartSound: {fileID: 0}
+  heartSound: {fileID: 7250895765238383833, guid: be2a0cb77217a7348a6e2497d9f2e09f, type: 3}
