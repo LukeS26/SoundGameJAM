@@ -259,6 +259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc133276d82d7747a675b6215d9adcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseLife: {fileID: 2394238962962467927, guid: 3763911562824b249a5046246d2b23f9, type: 3}
+  getLife: {fileID: 4128148728148664518, guid: b5ebcce68b21b344c82b29d06d851509, type: 3}
   moveSpeed: 50
   horizontal: 0
   vertical: 0

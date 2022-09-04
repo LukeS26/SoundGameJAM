@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SFX: {fileID: 8508167068426823960}
   clipLength: 0
+  isDistraction: 1
 --- !u!114 &7783065603781761567
 MonoBehaviour:
   m_ObjectHideFlags: 0

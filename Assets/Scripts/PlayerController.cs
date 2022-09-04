@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
+    public GameObject loseLife, getLife;
     public static PlayerController instance;
     public static string door;
 
@@ -82,6 +83,8 @@ public class PlayerController : MonoBehaviour {
     }*/
 
     public void Damage() {
+        Vector3 damageSoundOrigin = new Vector3(0, 0, 0);
+        Instantiate(loseLife, damageSoundOrigin,Quaternion.identity);
         health -= 1;
         if(health < 1) {
             Destroy(gameObject);
@@ -93,7 +96,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void addLife() {
-        if(health < 3) {
+        Vector3 lifeSoundOrigin = new Vector3(0, 0, 0);
+        Instantiate(getLife, lifeSoundOrigin, Quaternion.identity);
+        if (health < 3) {
             health ++;
         }
     }
