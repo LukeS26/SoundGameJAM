@@ -198,9 +198,9 @@ MonoBehaviour:
   sight: 0
   interval: 2
   radius: 6
-  playerRadius: 6
-  initVis: 0.65
-  burstSpeed: 60
+  playerRadius: 5
+  initVis: 0.19
+  burstSpeed: 28.9
   decSpeed: 0
   enabled: 1
   hidden: 0
