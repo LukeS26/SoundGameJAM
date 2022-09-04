@@ -44,7 +44,8 @@ public class enemyFollowPath : MonoBehaviour
             // then waypointIndex is increased by 1
 
             // and Enemy starts to walk to the next waypoint
-            if (transform.position == waypoints[waypointIndex].transform.position)
+            Debug.Log(Vector3.Distance(transform.position, waypoints[waypointIndex].transform.position));
+            if (Vector3.Distance(transform.position, waypoints[waypointIndex].transform.position) < 0.15f)
             {
                 waypointIndex += 1;
                 waypointIndex %= waypoints.Length;

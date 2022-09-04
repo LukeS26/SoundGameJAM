@@ -21,7 +21,8 @@ public class LevelManager : MonoBehaviour {
         if(col.gameObject.tag == "Player") {
             GameObject player = col.gameObject;
             PlayerController.door = door;
-
+            player.GetComponent<PlayerController>().addLife();
+            
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(levelName);
         }

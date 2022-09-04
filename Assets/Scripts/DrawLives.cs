@@ -36,7 +36,7 @@ public class DrawLives : MonoBehaviour
             lives[i].transform.position = transform.position + Vector3.right * i * imageInterval;
             SpriteRenderer r = lives[i].AddComponent<SpriteRenderer>();
             r.sprite = images[0];
-            r.sortingOrder = -1;
+            r.sortingOrder = 1;
             r.material = mat;
         }
     }

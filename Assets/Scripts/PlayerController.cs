@@ -91,4 +91,10 @@ public class PlayerController : MonoBehaviour {
             transform.position = startPos;
         }
     }
+
+    public void addLife() {
+        if(health < 3) {
+            health ++;
+        }
+    }
 }

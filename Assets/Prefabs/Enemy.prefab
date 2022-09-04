@@ -298,7 +298,7 @@ MonoBehaviour:
   playerRadius: 5
   initVis: 0.25
   burstSpeed: 90
-  decSpeed: 1
+  decSpeed: 0.5
   enabled: 1
   hidden: 1
 --- !u!114 &5711203640445174743

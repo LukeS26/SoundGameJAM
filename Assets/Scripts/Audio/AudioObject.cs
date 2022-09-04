@@ -29,7 +29,7 @@ public class AudioObject : MonoBehaviour
         if(!inRing) {
             sfx.Stop();
         } else {
-            sfx.volume = 5 / (Vector2.Distance(transform.position, player.transform.position) * Vector2.Distance(transform.position, player.transform.position));
+            sfx.volume = 2 / (Vector2.Distance(transform.position, player.transform.position) * Vector2.Distance(transform.position, player.transform.position));
         }
     }
 
