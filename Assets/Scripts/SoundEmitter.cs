@@ -10,7 +10,7 @@ public class SoundEmitter : MonoBehaviour
     GameObject rsys;
     public Material prefmat;
     Material rmat;
-    float t, sight;
+    public float t, sight;
     public float interval, radius;
     GameObject player;
     public float playerRadius, initVis, burstSpeed, decSpeed;
@@ -38,6 +38,7 @@ public class SoundEmitter : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, transform.position) < playerRadius && t > interval)
         {
+
             if(enabled) {
                 PlayPart(transform.position);
             }

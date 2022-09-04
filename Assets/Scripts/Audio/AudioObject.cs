@@ -8,9 +8,11 @@ public class AudioObject : MonoBehaviour
     public float delay,dist;
     public float currentDelay;
     public bool inRing,timeUp;
+    GameObject player;
 
     private void Start()
     {
+        player = GameObject.Find("Player");
         currentDelay = delay;
     }
 
@@ -18,7 +20,7 @@ public class AudioObject : MonoBehaviour
     {
         timeUp = false;
         currentDelay -= Time.deltaTime;
-        if (currentDelay < 0)
+        if (currentDelay < 0 && !sfx.isPlaying)
         {
             playSFX(dist);
             currentDelay = delay;
@@ -26,6 +28,8 @@ public class AudioObject : MonoBehaviour
 
         if(!inRing) {
             sfx.Stop();
+        } else {
+            sfx.volume = 1 / (Vector2.Distance(transform.position, player.transform.position) * Vector2.Distance(transform.position, player.transform.position));
         }
     }
 
@@ -46,12 +50,9 @@ public class AudioObject : MonoBehaviour
     //play SFX form the array at the position of the sound 
     public void playSFX(float volume)//Feature Point :Trigger Sound, Arrays 
     {
-        float mult = ((2 / volume));
-
-        Debug.Log(mult);
         if (inRing)
         {
-            sfx.PlayOneShot(sfx.clip, mult);//Feature Point :Trigger Sound, Arrays
+            sfx.PlayOneShot(sfx.clip, 1);//Feature Point :Trigger Sound, Arrays
         }
     }
 }

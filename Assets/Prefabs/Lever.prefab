@@ -13,11 +13,10 @@ GameObject:
   - component: {fileID: 2487467298398494169}
   - component: {fileID: 2487467298398494168}
   - component: {fileID: 2487467298398494171}
-  - component: {fileID: 2487467298398494170}
   - component: {fileID: 2487467298398494165}
   m_Layer: 0
   m_Name: Lever
-  m_TagString: Untagged
+  m_TagString: obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 0}
-  player: {fileID: 0}
   trig: 0
   imgs:
   - {fileID: 785531595, guid: 85bd9b1d68ff57644b47be0006fe3e77, type: 3}
@@ -149,32 +147,16 @@ MonoBehaviour:
   col: {r: 0.5283019, g: 0.5158713, b: 0, a: 0}
   prefsys: {fileID: 6112252678650021465, guid: 5649f2726dfad4e4e901a8338a44c8e0, type: 3}
   prefmat: {fileID: 2100000, guid: 45e79af0f0a2ea641ba3887106233b01, type: 2}
-  interval: 2
+  t: 0
+  sight: 0
+  interval: 1.5
   radius: 6
-  player: {fileID: 0}
-  playerRadius: 6
-  initVis: 0.65
-  burstSpeed: 60
+  playerRadius: 5
+  initVis: 0.19
+  burstSpeed: 28.9
   decSpeed: 0
+  enabled: 1
   hidden: 0
---- !u!114 &2487467298398494170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2487467298398494164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67acb419e4156c04a8ca555315ea5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wall: {fileID: 0}
-  player: {fileID: 0}
-  trig: 0
-  imgs:
-  - {fileID: -3975624549204834352, guid: 85bd9b1d68ff57644b47be0006fe3e77, type: 3}
-  - {fileID: -258920163012198913, guid: 85bd9b1d68ff57644b47be0006fe3e77, type: 3}
 --- !u!61 &2487467298398494165
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -4084,6 +4084,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2487467298398494171, guid: 9378cb8328d2e8541b69c32fcca213fc, type: 3}
+      propertyPath: radius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487467298398494171, guid: 9378cb8328d2e8541b69c32fcca213fc, type: 3}
       propertyPath: enabled
       value: 1
       objectReference: {fileID: 0}
@@ -4156,7 +4160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 1840894040}
-  delay: 3
+  delay: 0
   dist: 0
   currentDelay: 0
   inRing: 0
@@ -4320,7 +4324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193e2df02dd69de4d9bbe2f8bdbb9dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: brent_test
+  levelName: SecondRoom
   door: Door
 --- !u!212 &1213604339
 SpriteRenderer:
@@ -4679,6 +4683,18 @@ PrefabInstance:
     - target: {fileID: 594155483097507133, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 594155483407824864, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
+      propertyPath: m_Radius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 594155483407824870, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
+      propertyPath: xradius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 594155483407824870, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
+      propertyPath: yradius
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bde27dc1885a48489b0a9818f9fe41b, type: 3}
