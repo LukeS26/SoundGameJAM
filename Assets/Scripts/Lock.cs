@@ -49,7 +49,7 @@ public class Lock : MonoBehaviour
             GetComponent<SoundEmitter>().enabled = false;
         }
 
-        if (wt <= 0f) {
+        if (wall != null && wt <= 0f) {
             Destroy(wall);
             GetComponent<SoundEmitter>().PlayPart(wall.transform.position);
         }
