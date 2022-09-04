@@ -27,7 +27,7 @@ public class LoadGame : MonoBehaviour {
                 sounds[i].Stop();
             }            
             
-            SceneManager.LoadScene("FirstRoom");
+            SceneManager.LoadScene("Room1");
             inputManager.Menu.Disable();
         }
     }

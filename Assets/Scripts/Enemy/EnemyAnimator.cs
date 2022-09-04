@@ -23,9 +23,10 @@ public class EnemyAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xmove = gameObject.GetComponent<enemyFollowPath>().GetWaypoint().transform.position.x - transform.position.x;
-        float ymove = gameObject.GetComponent<enemyFollowPath>().GetWaypoint().transform.position.y - transform.position.y;
-
+        if(gameObject.GetComponent<enemyFollowPath>()) {
+            float xmove = gameObject.GetComponent<enemyFollowPath>().GetWaypoint().transform.position.x - transform.position.x;
+            float ymove = gameObject.GetComponent<enemyFollowPath>().GetWaypoint().transform.position.y - transform.position.y;
+        }
 
         if (xmove != 0 && Mathf.Abs(xmove) >= Mathf.Abs(ymove))
         { 
