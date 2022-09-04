@@ -15,7 +15,8 @@ public class SoundEmitter : MonoBehaviour
     GameObject player;
     public float playerRadius, initVis, burstSpeed, decSpeed;
     public bool enabled = true;
-
+    bool allowDec;
+    
     Material thisMat;
     public bool hidden;
     // Start is called before the first frame update
@@ -51,7 +52,7 @@ public class SoundEmitter : MonoBehaviour
         if (hidden)
         {
             thisMat.color = Color.Lerp(Color.black, Color.white, sight);
-            if (sight > 0f) sight -= Time.deltaTime * decSpeed;
+            if (sight > 0f && allowDec) sight -= Time.deltaTime * decSpeed;
         }
         
     }
@@ -71,9 +72,17 @@ public class SoundEmitter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (hidden && collision.gameObject == player)
+        if (hidden && collision.gameObject.tag == "Player")
         {
             sight = 1;
+            allowDec = false;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        if (hidden && collision.gameObject.tag == "Player")
+        {
+            allowDec = true;
         }
     }
 }

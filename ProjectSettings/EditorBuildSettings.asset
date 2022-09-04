@@ -21,6 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/brent_test_2.unity
     guid: 31dcd5eea759c014a9bf80decb31bf94
   - enabled: 1
-    path: Assets/Scenes/FirstRoom.unity
+    path: Assets/Scenes/Room4.unity
+    guid: dd909c8257c221e4c9d0ef9e538db842
+  - enabled: 1
+    path: Assets/Scenes/Room3.unity
+    guid: e1b309f99c29c2045bfc5b84c1a6a3f8
+  - enabled: 1
+    path: Assets/Scenes/Room2.unity
     guid: a9787f26ec53004458d03dde74311e4d
+  - enabled: 1
+    path: Assets/Scenes/Room1.unity
+    guid: 61c9eee314256634fb5e34d831e21b2d
   m_configObjects: {}
