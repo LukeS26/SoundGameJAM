@@ -166,7 +166,7 @@ MonoBehaviour:
   prefmat: {fileID: 2100000, guid: 45e79af0f0a2ea641ba3887106233b01, type: 2}
   t: 0
   sight: 0
-  interval: 2
+  interval: 1.5
   radius: 3
   playerRadius: 5
   initVis: 0.25

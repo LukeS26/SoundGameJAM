@@ -296,8 +296,8 @@ MonoBehaviour:
   interval: 2
   radius: 3
   playerRadius: 5
-  initVis: 0.25
-  burstSpeed: 90
+  initVis: 0.35
+  burstSpeed: 70
   decSpeed: 0.5
   enabled: 1
   hidden: 1
@@ -377,7 +377,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 760d1cc11129321479a94f42df9d4794, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b903010b0a3f94349b3a26d13f461121, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
