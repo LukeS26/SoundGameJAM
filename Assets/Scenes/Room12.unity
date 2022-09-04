@@ -5007,7 +5007,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &616759406
 PrefabInstance:
@@ -13849,7 +13849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647540615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.74, y: 4, z: 0}
+  m_LocalPosition: {x: -8.64, y: 3.95, z: 0}
   m_LocalScale: {x: 1.3480172, y: 1.3480172, z: 1.3480172}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13930,15 +13930,15 @@ PrefabInstance:
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 1236774335}
+      objectReference: {fileID: 1647540616}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1633407824}
+      objectReference: {fileID: 1236774335}
     - target: {fileID: 8856049707689392149, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
       propertyPath: waypoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1647540616}
+      objectReference: {fileID: 1633407824}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b38b20e140ab5429d1de12d0aebdbc, type: 3}
 --- !u!1001 &1900508291
@@ -14239,5 +14239,5 @@ Transform:
   m_Children:
   - {fileID: 483389140}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
