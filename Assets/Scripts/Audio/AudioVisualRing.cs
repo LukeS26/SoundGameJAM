@@ -64,7 +64,9 @@ public class AudioVisualRing : MonoBehaviour
     void Update()
     {
         range += rangeSpeed*Time.deltaTime;
-        lineWidth -=lineWidthSpeed*Time.deltaTime;
+
+       // lineWidth -=lineWidthSpeed*Time.deltaTime;
+        lineWidth -= range/rangeSpeed*Time.deltaTime;
         if (range > rangeMax)
         {
             range = rangeStart;
