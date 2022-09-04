@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  col: {r: 0.4528302, g: 0.16917053, b: 0.26014444, a: 0}
+  col: {r: 0.98039216, g: 0, b: 0.7197357, a: 0}
   prefsys: {fileID: 6112252678650021465, guid: 5649f2726dfad4e4e901a8338a44c8e0, type: 3}
   prefmat: {fileID: 2100000, guid: 45e79af0f0a2ea641ba3887106233b01, type: 2}
   t: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   radius: 3
   playerRadius: 5
   initVis: 0.25
-  burstSpeed: 90
+  burstSpeed: 70
   decSpeed: 0.5
   enabled: 1
   hidden: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  moveSpeed: 2
+  moveSpeed: 1.5
 --- !u!1 &5711203640494179474
 GameObject:
   m_ObjectHideFlags: 0

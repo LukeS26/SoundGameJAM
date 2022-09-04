@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  col: {r: 0.6039216, g: 0.09345222, b: 0.07639733, a: 0}
+  col: {r: 1, g: 0.32814848, b: 0, a: 0}
   prefsys: {fileID: 6112252678650021465, guid: 5649f2726dfad4e4e901a8338a44c8e0, type: 3}
   prefmat: {fileID: 2100000, guid: 45e79af0f0a2ea641ba3887106233b01, type: 2}
   t: 0

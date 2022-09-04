@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 417283fdc3b8ed84f9f59411544c6ffd
   - enabled: 0
-    path: Assets/Scenes/SecondRoom.unity
-    guid: e2a15272a99a78442951d3ba0caf68da
-  - enabled: 0
     path: Assets/Scenes/brent_test.unity
     guid: ae850a5028515e042b541b498ca10d64
   - enabled: 1
@@ -50,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room11.unity
     guid: 5d3c75d7f53fc2649bb33f8fe9146272
+  - enabled: 1
+    path: Assets/Scenes/Room12.unity
+    guid: e2a15272a99a78442951d3ba0caf68da
   m_configObjects: {}
