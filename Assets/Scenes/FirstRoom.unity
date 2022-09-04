@@ -4177,9 +4177,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SFX:
-  - {fileID: 9059083401724566512, guid: 59e541516125dc04eaf204f81a572f1b, type: 3}
-  - {fileID: 5116829961996181073, guid: fcfa99aee95947147a34fa6b52d9d4b1, type: 3}
-  - {fileID: 3463882950301956864, guid: 25b5eb7c46aee864488144e92cc5c366, type: 3}
+  - {fileID: 6938636680032726844, guid: f53c21a1ec78079469d04cf9fae3dba0, type: 3}
+  - {fileID: 5184258236605588949, guid: 2605e6b2c50072745a48516db19435c5, type: 3}
+  - {fileID: 894464613353469168, guid: c389348eb9a7aa24fa69a26140cb23ff, type: 3}
   sfxLow: 5
   sfxHigh: 20
   sfxDelay: 0
