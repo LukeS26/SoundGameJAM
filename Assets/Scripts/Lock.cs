@@ -5,6 +5,8 @@ using UnityEngine;
 public class Lock : MonoBehaviour
 {
     public GameObject wall;
+    public Material wmat1, wmat2;
+    public float wt;
     public bool trig;
     public Sprite[] imgs;
     bool inPlace;
@@ -34,16 +36,22 @@ public class Lock : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sprite = (trig) ? imgs[1] : imgs[0];
 
-        if (inPlace && inputManager.Player.Interact.triggered) {
+        if (inPlace && inputManager.Player.Interact.triggered && !trig) {
             trig = true;
             doorNoise.Play();
+            gameObject.GetComponent<AudioObject>().DisableSounds();
         }
 
         if (wall != null && trig)
         {
-            GetComponent<SoundEmitter>().PlayPart(wall.transform.position);
-            Destroy(wall);
+            wt -= Time.deltaTime;
+            wall.GetComponent<SpriteRenderer>().material = (Mathf.Cos(wt*45f) > 0f) ? wmat1 : wmat2;
             GetComponent<SoundEmitter>().enabled = false;
+        }
+
+        if (wt <= 0f) {
+            Destroy(wall);
+            GetComponent<SoundEmitter>().PlayPart(wall.transform.position);
         }
     }
 
