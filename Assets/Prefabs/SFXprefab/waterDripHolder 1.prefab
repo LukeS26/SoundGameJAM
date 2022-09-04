@@ -153,8 +153,13 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a17730fb068d0ea45bede2dd64cbd174, type: 3}
+<<<<<<< HEAD:Assets/Prefabs/SFXprefab/waterDripHolder 1.prefab
   m_PlayOnAwake: 0
   m_Volume: 1
+=======
+  m_PlayOnAwake: 1
+  m_Volume: 0.844
+>>>>>>> 5f8a06f1dbf16bd99ed5fc3040c25695aa41bea7:Assets/Prefabs/SFXprefab/waterDripHolder.prefab
   m_Pitch: 1
   Loop: 0
   Mute: 0
